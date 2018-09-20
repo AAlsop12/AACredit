@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PageTitle from './pageTitle';
 
 
-class Goals extends Component {
+class Loan extends Component {
     render() {
         return (
-            <div className='goals'>
+            <div className='loan'>
                 <PageTitle className='goals__title' title='My Goals'/>
                 <h4 className='goal-one'> Get Skills</h4>
                     <p className='goals__get-skills'> Continue improving my React/Javascript/Python skills.  Build 2 new projects by the end of October</p>
@@ -22,4 +22,4 @@ class Goals extends Component {
     }
 }
 
-export default Goals;
+export default Loan;

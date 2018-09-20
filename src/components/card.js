@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 
 import PageTitle from './pageTitle';
-import Navbar from './headernavbar/navbar';
-import Quote from './quote';
 
-class About extends Component {
+class Card extends Component {
     render() {
         const { className } = this.props;
         return (
@@ -24,4 +22,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Card;

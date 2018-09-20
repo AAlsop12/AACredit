@@ -12,50 +12,21 @@ class Account extends Component {
     componentDidMount() {
         
 
-        const headerLinks = [
-            {
-                _id: 0,
-                title: 'Logout',
-                path: '/signin'
-            },
-            {
-                _id: 1,
-                title: 'Sign Up',
-                path: '/signup'
-            }
-        ]
 
         const navbarLinks = [
             {
                 _id: 0,
-                title: 'About Me',
+                title: 'Credit Card',
                 active: false,
-                path: '/about'
+                path: '/card'
             },
             {
                 _id: 1,
-                title: 'Experience',
+                title: 'Term Loan',
                 active: false,
-                path: './experience'
+                path: './loan'
             },
-            {
-                _id: 2,
-                title: 'Goals',
-                active: false,
-                path: '/goals'
-            },
-            {
-                _id: 3,
-                title: 'Portfolio',
-                active: false,
-                path: '/portfolio'
-            },
-            {
-                _id: 4,
-                title: 'Contact',
-                active: false,
-                path: '/contact'
-            },
+
    
 
 
@@ -64,7 +35,6 @@ class Account extends Component {
 
         ]
 
-        this.props.setHeaderLinks(headerLinks);
         this.props.setNavbarLinks(navbarLinks);
     }
 
@@ -79,8 +49,8 @@ class Account extends Component {
 }
 
 function mapStateToProps(state) {
-    const { headerLinks, navbarLinks } = state.headerNavbar;
-    return { headerLinks, navbarLinks }
+    const { navbarLinks } = state.headerNavbar;
+    return { navbarLinks }
 }
 
 Account = connect(mapStateToProps, actions)(Account);
