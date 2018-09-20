@@ -10,7 +10,7 @@ class Button extends Component {
 
         return (
          
-                <button className='button__contact'
+                <button className='button'
                         type={type}
                         {...input}
                         onClick={() => history.push('/contact')}>CONTACT</button>
