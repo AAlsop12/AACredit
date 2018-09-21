@@ -17,7 +17,6 @@ class Layout extends Component {
         <Navbar />
         <Account />
         {this.props.children}
-        {/* {Quotes(list)} */}
       </div>
     );
   }

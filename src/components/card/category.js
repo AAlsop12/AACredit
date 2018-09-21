@@ -5,7 +5,8 @@ class Category extends Component {
         const { className, header, value } = this.props;
         return (
             <div className='category'>
-                <h3>{header} {value}</h3>
+                <h4 className='category__header'>{header}</h4>
+                <h4 className='category__value'>{value}</h4>
       
             </div>
         )

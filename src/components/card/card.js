@@ -8,7 +8,7 @@ class Card extends Component {
         return (
             <div className='card'>
                 <Congratulations />
-                <h3 className='card__header'>Here's what issuers are looking for:</h3>
+                {/* <h3 className='card__header'>Here's what issuers are looking for:</h3> */}
                 <Category className='card__score' header="Personal Credit Score" value='706'/>
                 <Category className='card__age' header="Personal Credit Age" value='16yr'/>
                 <Category className='card__inquiries' header="Personal Inquiries" value='2'/>

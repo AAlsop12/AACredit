@@ -3,15 +3,13 @@
     grid-column: content-s/content-e;
     background-color: rgba(white, .4);
     padding: 25px;
-
     border-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
-    font-size: 24px;
 
     display: grid;
     grid-template-rows: [s congrats-s] 1fr [congrats-e header-s] 1fr [header-e score-e] 1fr [score-e age-s] 1fr [age-e inquiries-s] 1fr [inquiries-e bankruptcies-s] 1fr [bankruptcies-e utilization-s] 1fr [utilization-s limit-s] 1fr [limit-e e];
-    grid-template-columns: [s title-s] 300px [title-e value-s] 50px [value-e e];
-    grid-row-gap: 10px;
+    grid-template-columns: [s] 1fr [e];
+    grid-row-gap: 20px;
     
 
      & > * {
@@ -23,18 +21,22 @@
         font-size: 24px;
      }
 
-     &__congratulations {
-         grid-row: congrats-s/congrats-e;
-         grid-column: title-s/title-e;
-     }
+
 }
 
+.category {
+    display: grid;
+    grid-template-rows: [s] 1fr [e];
+    grid-template-columns: [s header-s] 1fr [header-e value-s] 1fr [value-e];
 
+    &__header {
+        grid-row: s/e;
+        grid-column: header-s/header-e;
+    }
+    &__value {
+        grid-row: s/e;
+        grid-column: value-s/value-e;
+        justify-self: end;
+    }
 
-
-// <Category className='card__score' header="Personal Credit Score" value='706'/>
-// <Category className='card__age' header="Personal Credit Age" value='16yr'/>
-// <Category className='card__inquiries' header="Personal Inquiries" value='2'/>
-// <Category className='card__bankruptcies' header="Personal Bankruptcies" value='0'/>
-// <Category className='card__utilization' header="Personal Credit Utilization" value='32%'/>
-// <Category className='card__limit' header="Personal Credit Limit" value='49,300'/>
+}
