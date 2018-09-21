@@ -14,7 +14,7 @@ import history from './history';
 import Layout from './components/layout';
 
 import Loan from './components/loan';
-import Card from './components/card';
+import Card from './components/card/card';
 
 
 
