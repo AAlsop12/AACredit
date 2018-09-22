@@ -19,14 +19,14 @@ class Account extends Component {
                 title: 'Credit Card',
                 active: true,
                 path: '/card',
-                icon: <i class="fas fa-credit-card"></i>
+                icon: <i className="fas fa-credit-card"></i>
             },
             {
                 _id: 1,
                 title: 'Term Loan',
                 active: false,
                 path: './loan',
-                icon: <i class="fas fa-dollar-sign"></i>
+                icon: <i className="fas fa-dollar-sign"></i>
             },
 
    

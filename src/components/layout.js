@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 import Navbar from './headernavbar/navbar';
 import Account from './account/account';
 
-
-
-let list = ["first quote", "second quote", "third quote"]
-
 class Layout extends Component {
   
 

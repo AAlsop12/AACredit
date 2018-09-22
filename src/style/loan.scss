@@ -9,7 +9,6 @@
     border-radius: 5px;
     padding-top: 30px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
-    // font-size: 24px;
     
 }
 
@@ -72,7 +71,11 @@
 }
 
 .loan-wrapper__plus:hover {
+        transition: all .1s ease 0s;
+
         cursor: pointer;
+        transform: translateY(-1px);
+        color: #f4c842;
     }
 
 

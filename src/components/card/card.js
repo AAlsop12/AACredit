@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Congratulations from './congratulations';
-import Category from './category';
+import Congratulations from './congratulations/congratulations';
+import Category from './category/category';
 
 class Card extends Component {
     render() {
-        const { className } = this.props;
         return (
             <div className='card'>
                 <Congratulations />
-                {/* <h3 className='card__header'>Here's what issuers are looking for:</h3> */}
                 <Category className='card__score' header="Personal Credit Score" value='706'/>
                 <Category className='card__age' header="Personal Credit Age" value='16yr'/>
                 <Category className='card__inquiries' header="Personal Inquiries" value='2'/>
